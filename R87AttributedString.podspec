@@ -1,40 +1,21 @@
-#
-# Be sure to run `pod lib lint R87AttributedString.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "R87AttributedString"
   s.version          = "0.1.0"
-  s.summary          = "A short description of R87AttributedString."
+  s.summary          = "With the help of R87AttributedString you can format attributed texts easily."
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
+  s.description      = "With the help of R87AttributedString you can format attributed texts easily. For example you can add the thext #like this# or *like this* and you can specify from code how the text inside the # and * characters should look like."
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/R87AttributedString"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-  s.license          = 'MIT'
-  s.author           = { "Gergo Nemeth" => "reden87@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/R87AttributedString.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.homepage         = "https://github.com/reden87/R87AttributedString"
+  s.license          = { :type => "MIT", :file => "LICENSE" }
+  s.author           = { "Gergo Nemeth" => "mail@reden87.info" }
+  s.source           = { :git => "https://github.com/reden87/R87AttributedString.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/reden87'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '4.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'R87AttributedString' => ['Pod/Assets/*.png']
-  }
+  s.public_header_files = 'Pod/Classes/**/*.h'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'Foundation'
 end
