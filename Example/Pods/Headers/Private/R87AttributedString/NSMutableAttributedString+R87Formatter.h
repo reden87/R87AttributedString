@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/NSMutableAttributedString+R87Formatter.h

@@ -1,0 +1,14 @@
+PODS:
+  - R87AttributedString (0.1.0)
+
+DEPENDENCIES:
+  - R87AttributedString (from `../`)
+
+EXTERNAL SOURCES:
+  R87AttributedString:
+    :path: ../
+
+SPEC CHECKSUMS:
+  R87AttributedString: 3467ab9002bbdba0ee48dc4bbf069a786de5996d
+
+COCOAPODS: 0.39.0
