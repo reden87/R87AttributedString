@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "R87AttributedString"
-  s.version          = "0.1.0"
+  s.version          = "0.1.2"
   s.summary          = "With the help of R87AttributedString you can format attributed texts easily."
 
   s.description      = <<-DESC
