@@ -49,7 +49,7 @@ self.textView.attributedText = text;
 
 ## Compatibility
 
-iOS 4+
+iOS 4.3+
 
 ## License
 
