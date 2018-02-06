@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "R87AttributedString"
-  s.version          = "0.1.2"
+  s.version          = "0.2.0"
   s.summary          = "With the help of R87AttributedString you can format attributed texts easily."
 
   s.description      = <<-DESC
@@ -13,11 +13,10 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/reden87/R87AttributedString.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/reden87'
 
-  s.platform     = :ios, '4.3'
+  s.platform     = :ios, '7.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.public_header_files = 'Pod/Classes/**/*.h'
 
   s.frameworks = 'Foundation'
 end

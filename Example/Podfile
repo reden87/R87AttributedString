@@ -1,4 +1,6 @@
-source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-pod 'R87AttributedString', :path => '../'
+target 'Example' do
+ platform :ios, '7.0'
+    pod 'R87AttributedString', :path => '../'
+end

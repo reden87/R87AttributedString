@@ -1,6 +1,0 @@
-framework module R87AttributedString {
-  umbrella header "R87AttributedString-umbrella.h"
-
-  export *
-  module * { export * }
-}
