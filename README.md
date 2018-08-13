@@ -27,29 +27,21 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 You can use the librarly like this:
 
-```obj-c
-NSString *textString = @"*CocoaPods Events*\n\n#Code of Conduct#\nAll attendees, speakers, sponsors and volunteers...";
-NSDictionary *defaultTextAttributes = @{
-	NSForegroundColorAttributeName: [UIColor blackColor],
-	NSFontAttributeName: [UIFont systemFontOfSize:14.0],
-};
-NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:textString attributes:defaultTextAttributes];
+```swift
+let textString = "*This is amazing*\n\n#Code of Conduct#\nAll atten*d*ees, -speakers-, $sponsors$"
+let attributedString = NSMutableAttributedString(string: textString)
 
-[text r87_addAttributes:@{
-	NSFontAttributeName: [UIFont boldSystemFontOfSize:24.0],
-} betweenCharacters:@"#"];
+attributedString.r87_addAttribute(name: .foregroundColor, value: UIColor.red, betweenCharacters: "*")
+attributedString.r87_setAttributes(attributes: [.foregroundColor: UIColor.green], betweenCharacters: "#")
+attributedString.r87_addAttributes(attributes: [.font: UIFont.systemFont(ofSize: 25)], betweenCharacters: "$")
+attributedString.r87_removeAttribute(name: NSAttributedStringKey.font, betweenCharacters: "-")
 
-[text r87_addAttributes:@{
-	NSForegroundColorAttributeName: [UIColor redColor],
-	NSFontAttributeName: [UIFont systemFontOfSize:35.0],
-} betweenCharacters:@"*"];
-
-self.textView.attributedText = text;
+textView.attributedText = attributedString
 ```
 
 ## Compatibility
 
-iOS 4.3+
+iOS 7.0+
 
 ## License
 

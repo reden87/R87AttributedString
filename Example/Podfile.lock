@@ -1,14 +1,16 @@
 PODS:
-  - R87AttributedString (0.1.0)
+  - R87AttributedString (0.2.0)
 
 DEPENDENCIES:
   - R87AttributedString (from `../`)
 
 EXTERNAL SOURCES:
   R87AttributedString:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  R87AttributedString: 3467ab9002bbdba0ee48dc4bbf069a786de5996d
+  R87AttributedString: 628f646f9a9873f8cf35b291709bc3fe354eb8ab
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 144793c206761a182cbd7984013ba0a149ee307f
+
+COCOAPODS: 1.5.3
